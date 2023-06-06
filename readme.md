@@ -1,4 +1,4 @@
 1、maven中的parent标签如何使用。
-2、使用parent标签可以获得什么便利。
+2、使用parent标签可以获得什么便利：父工程的所有子工程依赖同一个软件R的同一个版本V1，则只需要在父工程的pom文件中引入即可。后面R需要做版本变更，变更到V2，则只需要在父pom中更改需要变更的版本即可。
 3、managementDependencies/dependencies标签的用法。
-4、使用managementDependencies/dependencies标签可以获得什么便利。
+4、使用managementDependencies/dependencies标签可以获得什么便利：父pom的大于两个以上的子工程依赖于同一个软件的同一个版本，则只需要在父pom的dependencyManagement中声明，且需要声明版本，子工程只需要在pom中声明groupId和artifactId即可，不需要声明version。当被依赖的软件要做版本变更时，便利性同第2条。
