@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>maven-parent</artifactId>
+        <groupId>com.example</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>son-2</artifactId>
+    <packaging>war</packaging>
+    <name>son-2 Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!--        父pom文件中将fastjson放在了dependencyManagement里面，
+        子工程如何要引用，只需要声明groupId和artifactId即可，不用声明版本号-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>son-2</finalName>
+    </build>
+</project>
