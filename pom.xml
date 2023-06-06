@@ -32,7 +32,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!--    在dependencies中的依赖，子工程不需要再进行任何引入和声明，可以直接使用-->
+    <!--    在dependencies中的依赖，子工程不需要再进行任何引入和声明，
+    就可以直接使用spring-boot-starter-web搭建web服务-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
