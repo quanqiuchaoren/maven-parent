@@ -1,0 +1,4 @@
+1、maven中的parent标签如何使用。
+2、使用parent标签可以获得什么便利。
+3、managementDependencies/dependencies标签的用法。
+4、使用managementDependencies/dependencies标签可以获得什么便利。
